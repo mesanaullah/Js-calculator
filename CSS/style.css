@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    /* background-color: #333; */
+    background-color: #fff;
+    height: 100vh;
+    width: 350px;
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    /* background-color:#BE3455; */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px rgb(0 0 0);
+    /* filter: drop-shadow( 0 0 1px rgb(0 0 0)); */
+}
+
+/* .title{
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    left: -80px;
+    color: #fff;
+} */
+.screen {
+    color: rgb(255, 255, 255);
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80px;
+    width: 300px;
+    overflow: hidden;
+    background-color: #333;
+    /* background-color: #9BA8AC; */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.clear:active,
+.more:active,
+.percentage:active {
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); */
+    color: #efefef;
+    background-color: #333;
+}
+
+.digit:active,
+.zero:active,
+.point:active,
+.clr:active {
+    background-color: rgb(128, 128, 128);
+    /* color: #333; */
+}
+
+.equalto:active,
+.add:active,
+.multiply:active,
+.devide:active,
+.sub:active {
+    background-color: #efefef;
+    color: black;
+}
+
+button,.clr  {
+    background: #333;
+    color: #fff;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    /* box-shadow: 0 0 1px 0 #333; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* .zero {
+    padding: 0px 110px 0 20px;
+} */
+
+.devide,
+.multiply,
+.sub,
+.add,
+.equalto {
+    background-color: rgb(255, 165, 0);
+    font-size: 25px;
+}
+
+.clear,
+.more,
+.percentage {
+    background-color: rgb(128, 128, 128);
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
